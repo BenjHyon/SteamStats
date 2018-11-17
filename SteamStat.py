@@ -5,7 +5,7 @@ import time
 def main():
     gamezToWatch = {"PUBG":"http://steamcommunity.com/app/578080","SQUAD":"http://steamcommunity.com/app/393380","CSGO":"http://steamcommunity.com/app/730","TF2":"http://steamcommunity.com/app/440",
                     "RUST":"http://steamcommunity.com/app/252490","H1Z1":"http://steamcommunity.com/app/433850","RB6":"http://steamcommunity.com/app/359550"}
-    data = sqlite3.connect('E:/test.db')
+    data = sqlite3.connect('test.db')
     for key,value in gamezToWatch.items():
         nb = retrieveCount(value)
         print("{0} players in {1}".format(nb,key))
